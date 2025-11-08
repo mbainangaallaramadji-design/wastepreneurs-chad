@@ -1,169 +1,559 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WASTEPRENEURS CHAD</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WASTEPRENEURS CHAD Crowdfunding</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Use Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Light background for the rest of the page */
+        }
+    </style>
 </head>
-<body class="bg-neutral-sand font-sans text-text-dark">
+<body>
 
-  <!-- Header -->
-  <header class="text-center py-10">
-    <h1 class="font-bold text-5xl text-green-700 mb-2">♻️ WASTEPRENEURS CHAD</h1>
-    <p class="text-xl text-gray-700">Empowering communities through sustainable waste management</p>
-  </header>
+<!-- Header Component (Sticky, Dark Background) -->
+<header class="bg-gray-900 shadow-xl sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-20">
 
-  <!-- Projects Section with Cards -->
-  <section class="max-w-6xl mx-auto px-5 py-16">
-    <h2 class="text-4xl font-bold text-green-700 mb-10 text-center">Our Projects</h2>
-    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-      
-      <!-- Project Card: Recycling Bins -->
-      <div class="bg-white rounded-lg shadow-lg p-6">
-        <h3 class="text-2xl font-semibold text-green-700 mb-3">Recycling Bins</h3>
-        <p class="text-gray-700 mb-4">Donation of recycling bins to communities and schools to promote proper waste segregation and recycling awareness.</p>
-        <div class="w-full bg-gray-200 rounded-full h-4">
-          <div class="bg-green-700 h-4 rounded-full" style="width: 40%;"></div>
+            <!-- Logo and Site Identity Group (Left Side) -->
+            <a href="#" class="flex items-center space-x-3">
+                
+                <!-- Logo Image Placeholder (Use WPC text on a green circle) -->
+                <img class="h-10 w-10 rounded-full object-cover" 
+                     src="https://placehold.co/40x40/059669/ffffff?text=WPC" 
+                     alt="WASTEPRENEURS CHAD Logo">
+                
+                <!-- Site Name and Tagline -->
+                <div class="flex flex-col">
+                    <span class="text-xl font-extrabold tracking-tight text-white uppercase">
+                        WASTEPRENEURS CHAD
+                    </span>
+                    <span class="text-xs font-medium text-emerald-400 hidden sm:block md:text-sm">
+                        Empowering communities through sustainable waste management.
+                    </span>
+                </div>
+            </a>
+
+            <!-- Navigation Links (Right Side) -->
+            <nav class="flex space-x-4">
+                <a href="#" class="text-sm font-semibold text-gray-300 hover:text-white transition duration-150 p-2 rounded-lg hover:bg-gray-700 hidden md:block">
+                    About Us
+                </a>
+                <a href="#projects" class="text-sm font-semibold text-gray-300 hover:text-white transition duration-150 p-2 rounded-lg hover:bg-gray-700 hidden md:block">
+                    Projects
+                </a>
+                <a href="#" class="px-4 py-2 text-sm font-bold text-gray-900 bg-emerald-400 rounded-lg shadow-md hover:bg-emerald-500 transition duration-150 transform hover:scale-105">
+                    Fund Our Work
+                </a>
+            </nav>
+
         </div>
-        <p class="text-sm text-gray-600 mt-1">Funding Progress: 40%</p>
-      </div>
-
-      <!-- Project Card: Waste Collection Trucks -->
-      <div class="bg-white rounded-lg shadow-lg p-6">
-        <h3 class="text-2xl font-semibold text-green-700 mb-3">Waste Collection Trucks</h3>
-        <p class="text-gray-700 mb-4">Purchase of two waste collection trucks to facilitate citywide collection and reduce open dumping.</p>
-        <div class="w-full bg-gray-200 rounded-full h-4">
-          <div class="bg-green-700 h-4 rounded-full" style="width: 30%;"></div>
-        </div>
-        <p class="text-sm text-gray-600 mt-1">Funding Progress: 30%</p>
-      </div>
-
-      <!-- Project Card: Community Education -->
-      <div class="bg-white rounded-lg shadow-lg p-6">
-        <h3 class="text-2xl font-semibold text-green-700 mb-3">Community Education</h3>
-        <p class="text-gray-700 mb-4">Conducting recycling and waste management workshops, school programs, and awareness campaigns.</p>
-        <div class="w-full bg-gray-200 rounded-full h-4">
-          <div class="bg-green-700 h-4 rounded-full" style="width: 50%;"></div>
-        </div>
-        <p class="text-sm text-gray-600 mt-1">Funding Progress: 50%</p>
-      </div>
-
-      <!-- Project Card: Training Programs -->
-      <div class="bg-white rounded-lg shadow-lg p-6">
-        <h3 class="text-2xl font-semibold text-green-700 mb-3">Training Programs</h3>
-        <p class="text-gray-700 mb-4">Training youth and women in sustainable waste management and recycling practices.</p>
-        <div class="w-full bg-gray-200 rounded-full h-4">
-          <div class="bg-green-700 h-4 rounded-full" style="width: 20%;"></div>
-        </div>
-        <p class="text-sm text-gray-600 mt-1">Funding Progress: 20%</p>
-      </div>
-
-      <!-- Project Card: Mobile App & Blockchain -->
-      <div class="bg-white rounded-lg shadow-lg p-6">
-        <h3 class="text-2xl font-semibold text-green-700 mb-3">Mobile App & Blockchain</h3>
-        <p class="text-gray-700 mb-4">Develop a mobile app and blockchain system to ensure transparency in fund allocation and waste collection tracking.</p>
-        <div class="w-full bg-gray-200 rounded-full h-4">
-          <div class="bg-green-700 h-4 rounded-full" style="width: 15%;"></div>
-        </div>
-        <p class="text-sm text-gray-600 mt-1">Funding Progress: 15%</p>
-      </div>
-
     </div>
-  </section>
+</header>
 
-  <!-- Executive Summary -->
-  <section class="max-w-5xl mx-auto px-5 py-10 bg-white rounded-lg shadow-md mb-10">
-    <h2 class="text-3xl font-bold text-green-700 mb-5">Executive Summary</h2>
-    <p class="text-lg mb-3">
-      WASTEPRENEURS CHAD is a socially-driven waste management startup based in N’Djamena, Chad, tackling environmental and socioeconomic challenges. Improper waste disposal leads to severe pollution and health risks, while youth unemployment exceeds 50% and women face limited income opportunities. We offer localized waste collection, recycling education, training programs, and blockchain-based payment systems for transparency and fair compensation.
-    </p>
-    <p class="text-lg">
-      Our goal is to raise $250,000 through a 45-day donation-based crowdfunding campaign to finance waste collection trucks, recycling equipment, workforce training, digital platforms, and community engagement initiatives. Donors will directly contribute to a cleaner environment and sustainable livelihoods.
-    </p>
-  </section>
+<!-- Main Content Area -->
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+    
+    <!-- Hero Section -->
+    <section class="mb-16 p-10 bg-white rounded-xl shadow-lg border-l-4 border-emerald-500">
+        <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-3">
+            Investing in a Greener Chad
+        </h1>
+        <p class="text-lg text-gray-600 max-w-3xl">
+            Join the **WASTEPRENEURS CHAD** movement. Your donation directly funds projects that turn waste into opportunity, creating jobs and cleaning our communities.
+        </p>
+    </section>
 
-  <!-- Company Description -->
-  <section class="max-w-5xl mx-auto px-5 py-10">
-    <h2 class="text-3xl font-bold text-green-700 mb-5">Company Description</h2>
-    <p class="text-lg mb-3">
-      <strong>Name:</strong> WASTEPRENEURS CHAD<br>
-      <strong>Founded:</strong> 2025<br>
-      <strong>Location:</strong> N’Djamena, Chad<br>
-      <strong>Sector:</strong> Waste Management / Environmental Sustainability / Social Enterprise
-    </p>
-    <p class="text-lg mb-3"><strong>Vision:</strong> To become a leader in waste management in Chad, creating a green, inclusive, and economically vibrant future.</p>
-    <p class="text-lg mb-3"><strong>Mission:</strong> To eliminate waste dumping and pollution while generating sustainable jobs for disadvantaged women and youth.</p>
-    <p class="text-lg"><strong>Solutions Offered:</strong></p>
-    <ul class="list-disc list-inside space-y-2 text-lg mb-3">
-      <li>Localized waste collection and transportation</li>
-      <li>Recycling market development</li>
-      <li>Training & workforce development</li>
-      <li>Community education campaigns</li>
-      <li>Income opportunities for households</li>
-    </ul>
-  </section>
+    <!-- --- Executive Summary Section --- -->
+    <section class="mb-16">
+        <div class="bg-white p-8 sm:p-12 rounded-xl shadow-2xl border-t-8 border-emerald-500">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">
+                Executive Summary
+            </h2>
+            
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                **WASTEPRENEURS CHAD** is a socially-driven waste management startup based in N’Djamena, Chad, dedicated to tackling the urgent environmental and socioeconomic challenges facing the country. With improper waste disposal contributing to severe air, water, and soil pollution, as well as significant health risks to local communities, WASTEPRENEURS CHAD provides an innovative, community-centered solution that combines environmental sustainability with economic empowerment for disadvantaged youth and women.
+            </p>
 
-  <!-- Crowdfunding Section -->
-  <section class="max-w-5xl mx-auto px-5 py-10 bg-white rounded-lg shadow-md mb-10">
-    <h2 class="text-3xl font-bold text-green-700 mb-5">Crowdfunding Campaign</h2>
-    <p class="text-lg mb-3">We are running a donation-based crowdfunding campaign on platforms like GoFundMe or GlobalGiving, attracting environmentally-conscious donors worldwide. Our focus is on storytelling, transparency, and measurable social impact.</p>
-  </section>
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed border-l-4 border-gray-200 pl-4 italic">
+                Chad faces a mounting waste crisis: over 70% of household and industrial waste is improperly managed, leading to polluted rivers, contaminated drinking water, and rising respiratory illnesses among children and adults. Simultaneously, youth unemployment in Chad exceeds 50%, and women are disproportionately excluded from formal economic opportunities. By addressing these intertwined issues, WASTEPRENEURS CHAD not only reduces environmental hazards but also empowers marginalized populations through dignified, sustainable work.
+            </p>
 
-  <!-- Campaign Plan -->
-  <section class="max-w-5xl mx-auto px-5 py-10">
-    <h2 class="text-3xl font-bold text-green-700 mb-5">Campaign Plan</h2>
-    <ul class="list-disc list-inside space-y-2 text-lg">
-      <li>Pre-launch: Build awareness via social media, press kits, and volunteer ambassadors.</li>
-      <li>Launch: Go live on crowdfunding platforms with storytelling videos and clear call-to-action.</li>
-      <li>Outreach & Marketing: Daily updates, school visits, local events, social media posts.</li>
-      <li>Donor Recognition: Thank-you messages, donor wall, and video updates.</li>
-      <li>Post-Campaign Reporting: Detailed fund usage and measurable impact updates.</li>
-    </ul>
-  </section>
+            <p class="text-lg text-gray-700 mb-0 leading-relaxed">
+                The startup offers localized waste collection, recycling education, training programs, and market development for recycled materials. In addition, it is pioneering a blockchain-based payment system to ensure transparency and fair compensation for community workers. The startup seeks **$250,000** through donation-based crowdfunding to finance two waste collection trucks, recycling equipment, workforce training, digital platforms for app-based waste pickup, and community engagement initiatives. The campaign will run for 45 days on platforms like GoFundMe or GlobalGiving, targeting environmentally-conscious donors, philanthropists, and impact investors worldwide. Through storytelling, emotional engagement, and robust social media outreach, WASTEPRENEURS CHAD aims to raise both funds and awareness, creating a ripple effect that promotes sustainable development, environmental responsibility, and socioeconomic empowerment in Chad. Donors will directly contribute to a cleaner environment and meaningful livelihood opportunities for women and youth.
+            </p>
+        </div>
+    </section>
+    <!-- --- End Executive Summary Section --- -->
+    
+    <!-- --- Company Description Section --- -->
+    <section class="mb-16">
+        <div class="bg-white p-8 sm:p-12 rounded-xl shadow-xl border-l-4 border-gray-900">
+            <h2 class="text-3xl font-bold text-gray-900 mb-8 border-b pb-2">
+                Company Description
+            </h2>
 
-  <!-- Resources & Partners -->
-  <section class="max-w-5xl mx-auto px-5 py-10 bg-white rounded-lg shadow-md mb-10">
-    <h2 class="text-3xl font-bold text-green-700 mb-5">Resources & Partners Needed</h2>
-    <ul class="list-disc list-inside space-y-2 text-lg">
-      <li>NGOs: Awareness campaigns, workshops, school programs.</li>
-      <li>Local Municipalities: Facilitate logistics and permits.</li>
-      <li>Tech Partners: Develop blockchain system and mobile app.</li>
-      <li>Media Team: Create visuals, videos, infographics.</li>
-      <li>Volunteer Ambassadors: Mobilize community participation.</li>
-    </ul>
-  </section>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                
+                <!-- Left Column: Key Details -->
+                <div>
+                    <h3 class="text-xl font-semibold text-emerald-600 mb-4">Key Corporate Details</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <span class="font-bold w-32 shrink-0">Name:</span> 
+                            <span class="flex-1">WASTEPRENEURS CHAD</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold w-32 shrink-0">Founded:</span> 
+                            <span class="flex-1">2025</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold w-32 shrink-0">Location:</span> 
+                            <span class="flex-1">N’Djamena, Chad</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="font-bold w-32 shrink-0">Sector:</span> 
+                            <span class="flex-1">Waste Management / Environmental Sustainability / Social Enterprise</span>
+                        </li>
+                    </ul>
+                </div>
 
-  <!-- Budget -->
-  <section class="max-w-5xl mx-auto px-5 py-10">
-    <h2 class="text-3xl font-bold text-green-700 mb-5">Budget & Costs</h2>
-    <ul class="list-disc list-inside space-y-2 text-lg">
-      <li>Waste & Recycling Trucks (2 units): $90,000</li>
-      <li>Recycling Bins and Containers: $20,000</li>
-      <li>Training Programs: $25,000</li>
-      <li>Part-Time Workforce (1 year): $40,000</li>
-      <li>Blockchain-based System: $15,000</li>
-      <li>Website & App Development: $25,000</li>
-      <li>Marketing & Video: $10,000</li>
-      <li>Logistics, Admin, Legal, Misc.: $25,000</li>
-    </ul>
-  </section>
+                <!-- Right Column: Vision, Mission, Solutions -->
+                <div>
+                    <h3 class="text-xl font-semibold text-emerald-600 mb-4">Vision & Mission</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        WASTEPRENEURS CHAD’s **vision** is a pollution-free Chad where every community member has the opportunity to thrive through sustainable economic activity. Our **mission** is to transform the waste landscape of N’Djamena by providing accessible, reliable, and ethical waste management services that empower marginalized youth and women.
+                    </p>
 
-  <!-- Timeline -->
-  <section class="max-w-5xl mx-auto px-5 py-10 bg-white rounded-lg shadow-md mb-10">
-    <h2 class="text-3xl font-bold text-green-700 mb-5">Timeline</h2>
-    <p class="text-lg">Month 1: Pre-launch preparations and volunteer recruitment.<br>
-       Month 2: Launch 45-day crowdfunding campaign.<br>
-       Months 3–12: Implement collection, training, and digital platform.<br>
-       Month 13+: Donor reporting and evaluation.
-    </p>
-  </section>
+                    <h3 class="text-xl font-semibold text-emerald-600 mb-4">Solutions Offered</h3>
+                    <ul class="list-disc list-inside space-y-3 text-gray-700 ml-4">
+                        <li>
+                            **Community-Based Waste Collection and Recycling:** We establish local collection points and use small, locally-managed teams (staffed primarily by youth and women) for residential and commercial waste pickup.
+                        </li>
+                        <li>
+                            **Economic Empowerment and Skill Development:** We run certified training programs in sorting, processing, upcycling, and waste management entrepreneurship.
+                        </li>
+                        <li>
+                            **Tech-Enabled Transparency and Market Access:** We utilize a proprietary mobile application for streamlined pick-up scheduling and a blockchain-based ledger to ensure transparent, timely payment and market access for recycled commodities.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --- End Company Description Section --- -->
 
-  <!-- Footer -->
-  <footer class="text-center py-10 bg-green-700 text-white">
-    <p>© 2025 WASTEPRENEURS CHAD – Building a greener, cleaner, and empowered community</p>
-  </footer>
+    <!-- --- Crowdfunding Campaign Section --- -->
+    <section class="mb-16">
+        <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-emerald-600">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">
+                Crowdfunding Campaign: The Impact Goal
+            </h2>
+            
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                Our immediate crowdfunding effort aims to raise **$250,000** over a 45-day campaign. This critical funding will be allocated directly to purchasing essential infrastructure: two specialized waste collection trucks, initial recycling processing equipment, and launching our intensive training program for the first cohort of 50 Wastepreneurs (youth and women).
+            </p>
+            
+            <p class="text-lg text-gray-700 leading-relaxed">
+                Achieving this goal will enable us to start operations in three key neighborhoods of N’Djamena, removing over **500 tons of waste per month** and generating immediate, dignified employment where it is needed most. Every dollar contributed is a direct investment in a cleaner, more prosperous future for Chad's communities.
+            </p>
+        </div>
+    </section>
+    <!-- --- End Crowdfunding Campaign Section --- -->
+
+    <!-- --- Campaign Plan Section --- -->
+    <section class="mb-16">
+        <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-gray-600">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">
+                The 45-Day Campaign Plan: Strategy & Outreach
+            </h2>
+            
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                The Campaign Plan is structured around maximizing visibility and donor engagement across multiple channels:
+            </p>
+            
+            <ul class="list-disc list-inside space-y-3 text-gray-700 ml-4">
+                <li>
+                    **Phase 1 (The Launch):** A strong media partnership announcement and an emotional video story, driving traffic to the main campaign platform (e.g., GlobalGiving).
+                </li>
+                <li>
+                    **Phase 2 (Mid-Campaign Momentum):** Targeted social media advertising focusing on the social and economic impact, weekly progress updates, and a major virtual community event.
+                </li>
+                <li>
+                    **Phase 3 (Final Push):** Personalized outreach to impact investors and high-net-worth individuals, using detailed impact reports (e.g., "$100 buys 10 recycling bins"). We will offer tiered recognition, including virtual tours of N'Djamena's progress and official recognition on our new mobile app platform.
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- --- End Campaign Plan Section --- -->
+
+    <!-- --- Budget Section --- -->
+    <section class="mb-16">
+        <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-red-500">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">
+                Budget Allocation: Our $250,000 Goal
+            </h2>
+            
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                Every dollar raised has a specific role in bringing our sustainable waste management solution to life. Our budget is clearly broken down across key operational and social impact categories:
+            </p>
+            
+            <div class="overflow-x-auto rounded-lg border border-gray-200">
+                <table class="min-w-full divide-y divide-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-700 uppercase tracking-wider">
+                                Item Category
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-right text-xs font-bold text-gray-700 uppercase tracking-wider">
+                                Cost
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-right text-xs font-bold text-gray-700 uppercase tracking-wider">
+                                Percentage
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody class="bg-white divide-y divide-gray-200">
+                        
+                        <tr class="bg-gray-100 font-semibold text-gray-800">
+                            <td class="px-6 py-3" colspan="3">1. Infrastructure & Equipment</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-3 whitespace-nowrap">Purchase of 2 Waste Collection Trucks</td>
+                            <td class="px-6 py-3 whitespace-nowrap text-right">$90,000</td>
+                            <td class="px-6 py-3 whitespace-nowrap text-right">36%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-3 whitespace-nowrap">Initial Recycling Processing Equipment (Crushers, Balers)</td>
+                            <td class="px-6 py-3 whitespace-nowrap text-right">$40,000</td>
+                            <td class="px-6 py-3 whitespace-nowrap text-right">16%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-3 whitespace-nowrap">Recycling Bins & Local Collection Points Setup</td>
+                            <td class="px-6 py-3 whitespace-nowrap text-right">$20,000</td>
+                            <td class="px-6 py-3 whitespace-nowrap text-right">8%</td>
+                        </tr>
+
+                        <tr class="bg-gray-100 font-semibold text-gray-800">
+                            <td class="px-6 py-3" colspan="3">2. Program & Training</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-3 whitespace-nowrap">Wastepreneur Training Program (First Cohort of 50)</td>
+                            <td class="px-6 py-3 whitespace-nowrap text-right">$25,000</td>
+                            <td class="px-6 py-3 whitespace-nowrap text-right">10%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-3 whitespace-nowrap">Community Recycling Education Campaigns</td>
+                            <td class="px-6 py-3 whitespace-nowrap text-right">$10,000</td>
+                            <td class="px-6 py-3 whitespace-nowrap text-right">4%</td>
+                        </tr>
+
+                        <tr class="bg-gray-100 font-semibold text-gray-800">
+                            <td class="px-6 py-3" colspan="3">3. Technology & Operations</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-3 whitespace-nowrap">Mobile App & Blockchain System Development</td>
+                            <td class="px-6 py-3 whitespace-nowrap text-right">$40,000</td>
+                            <td class="px-6 py-3 whitespace-nowrap text-right">16%</td>
+                        </tr>
+                        <tr>
+                            <td class="px-6 py-3 whitespace-nowrap">Initial 3-Month Operating Costs (Salaries, Fuel, Maintenance)</td>
+                            <td class="px-6 py-3 whitespace-nowrap text-right">$25,000</td>
+                            <td class="px-6 py-3 whitespace-nowrap text-right">10%</td>
+                        </tr>
+
+                        <tr class="bg-emerald-500 text-white font-extrabold text-lg">
+                            <td class="px-6 py-3">GRAND TOTAL</td>
+                            <td class="px-6 py-3 text-right">$250,000</td>
+                            <td class="px-6 py-3 text-right">100%</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    <!-- --- End Budget Section --- -->
+
+    <!-- --- Timeline Section --- -->
+    <section class="mb-16">
+        <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-blue-500">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">
+                Execution Timeline: From Funding to Impact
+            </h2>
+            
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                Upon successful completion of the 45-day crowdfunding campaign, our operational timeline focuses on swift deployment and impact generation:
+            </p>
+            
+            <ol class="list-decimal list-inside space-y-4 text-gray-700 ml-4">
+                <li class="pl-2">
+                    **Month 1-2 (Procurement & Setup):**
+                    <ul class="list-disc list-inside ml-6 text-sm space-y-1 mt-1">
+                        <li>Finalize purchase and logistics for 2 Waste Collection Trucks.</li>
+                        <li>Acquire and install initial Recycling Processing Equipment.</li>
+                        <li>Secure and establish 15 community collection points across the 3 pilot neighborhoods.</li>
+                    </ul>
+                </li>
+                <li class="pl-2">
+                    **Month 3 (Launch Phase):**
+                    <ul class="list-disc list-inside ml-6 text-sm space-y-1 mt-1">
+                        <li>Launch the intensive **Wastepreneur Training Program** for the first cohort (50 trainees).</li>
+                        <li>Soft launch of the Mobile App (Phase 1) for worker tracking and payment ledger.</li>
+                    </ul>
+                </li>
+                <li class="pl-2">
+                    **Month 4-6 (Initial Operations & Outreach):**
+                    <ul class="list-disc list-inside ml-6 text-sm space-y-1 mt-1">
+                        <li>Begin full waste collection and processing operations in the 3 pilot neighborhoods.</li>
+                        <li>Launch the city-wide Community Recycling Education Campaigns.</li>
+                        <li>Establish first bulk recycling sales contracts with local and regional buyers.</li>
+                    </ul>
+                </li>
+                <li class="pl-2">
+                    **Month 7-12 (Growth & Evaluation):**
+                    <ul class="list-disc list-inside ml-6 text-sm space-y-1 mt-1">
+                        <li>Expand operations into 2 new target neighborhoods, onboarding a second cohort of Wastepreneurs.</li>
+                        <li>Conduct a full impact evaluation, analyzing tons of waste diverted and jobs created.</li>
+                        <li>Prepare for next funding round based on proven operational model and results.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+    </section>
+    <!-- --- End Timeline Section --- -->
+
+    <!-- --- Resources & Partners Needed Section --- -->
+    <section class="mb-16">
+        <div class="bg-white p-8 rounded-xl shadow-lg border-l-4 border-indigo-500">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 border-b pb-2">
+                Resources & Strategic Partners Needed
+            </h2>
+            
+            <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                To maximize our impact and scale operations effectively, we are actively seeking collaboration with the following key partners and resources:
+            </p>
+
+            <ul class="list-disc list-inside space-y-4 text-gray-700 ml-4">
+                <li>
+                    **Non-Governmental Organizations (NGOs) & Development Agencies:** Partners experienced in social enterprise development, vocational training, or environmental advocacy to help refine our social impact models.
+                    <span class="block text-sm text-gray-500 mt-1 italic">
+                        Examples: **Job Booster Chad** (for workforce training), and the **UK charity WasteAI** (for technological and environmental consulting).
+                    </span>
+                </li>
+                <li>
+                    **Local Municipalities:** Essential for regulatory support, site access for collection points, and official endorsement of our waste management routes.
+                    <span class="block text-sm text-gray-500 mt-1 italic">
+                        Example: **Mairie centrale de N'Djamena** (Central Municipality of N'Djamena).
+                    </span>
+                </li>
+                <li>
+                    **Tech Partners:** Collaborators to assist in the development, scaling, and maintenance of our proprietary mobile application and blockchain transparency ledger.
+                </li>
+                <li>
+                    **Media Team & Communications Support:** Expertise to amplify our story, manage public relations, and create engaging campaign content for both local and international audiences.
+                    <span class="block text-sm text-gray-500 mt-1 italic">
+                        Example: **Wenaklabs Chad** (local media/communication agency).
+                    </span>
+                </li>
+                <li>
+                    **Volunteer Ambassadors:** Individuals or groups committed to spreading awareness about our mission, running local fundraising drives, and assisting with community outreach and education campaigns.
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- --- End Resources & Partners Needed Section --- -->
+
+    <!-- --- Projects Section --- -->
+    <section id="projects" class="mb-12">
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 text-center mb-4">
+            Our Current Projects
+        </h2>
+        <p class="text-center text-gray-600 mb-10 max-w-xl mx-auto">
+            Select a project below to learn more and contribute directly to empowering local communities through sustainable waste solutions.
+        </p>
+
+        <!-- Project Cards Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Card 1: Recycling Bins -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden border border-gray-200 transform hover:scale-[1.01]">
+                <!-- Placeholder Image -->
+                <img class="h-48 w-full object-cover" 
+                     src="https://placehold.co/600x400/065f46/ffffff?text=Recycling+Bins" 
+                     alt="Donation of Recycling Bins">
+                
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Donation of Recycling Bins</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        We provide recycling bins to communities and schools.
+                    </p>
+
+                    <div class="mb-4">
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-emerald-600">$5,000 Funded</span>
+                            <span class="text-gray-500">Goal: $20,000</span>
+                        </div>
+                        <!-- Progress Bar (25%) -->
+                        <div class="bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 25%"></div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">25% Complete</p>
+                    </div>
+
+                    <a href="#" class="block w-full text-center px-4 py-3 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-700 transition duration-150 transform hover:scale-[1.02] shadow-md">
+                        Donate Now
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Card 2: Waste Collection Trucks -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden border border-gray-200 transform hover:scale-[1.01]">
+                <!-- Placeholder Image -->
+                <img class="h-48 w-full object-cover" 
+                     src="https://placehold.co/600x400/047857/ffffff?text=Collection+Trucks" 
+                     alt="Purchase of Waste Collection Trucks">
+                
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Purchase of Waste Collection Trucks</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Buying trucks to expand citywide waste collection.
+                    </p>
+
+                    <div class="mb-4">
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-emerald-600">$30,000 Funded</span>
+                            <span class="text-gray-500">Goal: $90,000</span>
+                        </div>
+                        <!-- Progress Bar (33.33%) -->
+                        <div class="bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 33.33%"></div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">33% Complete</p>
+                    </div>
+
+                    <a href="#" class="block w-full text-center px-4 py-3 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-700 transition duration-150 transform hover:scale-[1.02] shadow-md">
+                        Donate Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 3: Education Campaigns -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden border border-gray-200 transform hover:scale-[1.01]">
+                <!-- Placeholder Image -->
+                <img class="h-48 w-full object-cover" 
+                     src="https://placehold.co/600x400/059669/ffffff?text=Education+Campaigns" 
+                     alt="Community Recycling Education Campaigns">
+                
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Community Recycling Education Campaigns</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Educating communities on recycling.
+                    </p>
+
+                    <div class="mb-4">
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-emerald-600">$2,500 Funded</span>
+                            <span class="text-gray-500">Goal: $10,000</span>
+                        </div>
+                        <!-- Progress Bar (25%) -->
+                        <div class="bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 25%"></div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">25% Complete</p>
+                    </div>
+
+                    <a href="#" class="block w-full text-center px-4 py-3 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-700 transition duration-150 transform hover:scale-[1.02] shadow-md">
+                        Donate Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 4: Training Programs -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden border border-gray-200 transform hover:scale-[1.01]">
+                <!-- Placeholder Image -->
+                <img class="h-48 w-full object-cover" 
+                     src="https://placehold.co/600x400/0d9488/ffffff?text=Training+Programs" 
+                     alt="Training Programs for Youth and Women">
+                
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Training Programs for Youth and Women</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Training youth and women for employment in waste management.
+                    </p>
+
+                    <div class="mb-4">
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-emerald-600">$7,500 Funded</span>
+                            <span class="text-gray-500">Goal: $25,000</span>
+                        </div>
+                        <!-- Progress Bar (30%) -->
+                        <div class="bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 30%"></div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">30% Complete</p>
+                    </div>
+
+                    <a href="#" class="block w-full text-center px-4 py-3 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-700 transition duration-150 transform hover:scale-[1.02] shadow-md">
+                        Donate Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Card 5: Mobile App & Blockchain -->
+            <div class="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden border border-gray-200 transform hover:scale-[1.01]">
+                <!-- Placeholder Image -->
+                <img class="h-48 w-full object-cover" 
+                     src="https://placehold.co/600x400/10b981/ffffff?text=Blockchain+App" 
+                     alt="Mobile App & Blockchain System">
+                
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Mobile App & Blockchain System</h3>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Creating a blockchain-based fund tracking system and mobile app.
+                    </p>
+
+                    <div class="mb-4">
+                        <div class="flex justify-between text-xs font-semibold mb-1">
+                            <span class="text-emerald-600">$15,000 Funded</span>
+                            <span class="text-gray-500">Goal: $40,000</span>
+                        </div>
+                        <!-- Progress Bar (37.5%) -->
+                        <div class="bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-emerald-500 h-2.5 rounded-full" style="width: 37.5%"></div>
+                        </div>
+                        <p class="text-xs text-gray-500 mt-1">37.5% Complete</p>
+                    </div>
+
+                    <a href="#" class="block w-full text-center px-4 py-3 bg-emerald-600 text-white font-bold rounded-lg hover:bg-emerald-700 transition duration-150 transform hover:scale-[1.02] shadow-md">
+                        Donate Now
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <!-- End Project Cards Grid -->
+    </section>
+    <!-- --- End Projects Section --- -->
+    
+</main>
+
+<!-- --- Footer Section (Green background, White text, Centered) --- -->
+<footer class="bg-emerald-600 text-white text-center py-8 mt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <p class="text-sm">
+            © 2025 WASTEPRENEURS CHAD – Building a greener, cleaner, and empowered community
+        </p>
+    </div>
+</footer>
+<!-- --- End Footer Section --- -->
 
 </body>
 </html>
